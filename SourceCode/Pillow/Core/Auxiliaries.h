@@ -96,7 +96,7 @@ namespace Pillow
          ReadonlyProperty(ValueType, Type)
 
    public:
-      // isStringValue: True if using quick initialing route.
+      // isStringValue: True if using quick initializing route.
       KeyValuePair(string key, string value, bool isStringValue = false);
 
       ForceInline bool IsKeyOnly() const { return _ValueRaw.empty(); }
