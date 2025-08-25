@@ -53,11 +53,27 @@ XMFLOAT4A Pillow::KeyValuePair::GetFloat4Aligned()
 
 bool KeyValuePair::operator==(const KeyValuePair& right) const
 {
+   if (this->_Type == ValueType::Integer)
+   {
+      return this->GetInteger() == right.GetInteger();
+   }
+   if (this->_Type == ValueType::Float)
+   {
+      return this->GetFloat() == right.GetFloat();
+   }
    return this->_Key == right._Key && this->_ValueRaw == right._ValueRaw;
 }
 
 bool Pillow::KeyValuePair::operator>(const KeyValuePair& right) const
 {
+   if (this->_Type == ValueType::Integer)
+   {
+      return this->GetInteger() > right.GetInteger();
+   }
+   if (this->_Type == ValueType::Float)
+   {
+      return this->GetFloat() > right.GetFloat();
+   }
    return this->_Key > right._Key;
 }
 
