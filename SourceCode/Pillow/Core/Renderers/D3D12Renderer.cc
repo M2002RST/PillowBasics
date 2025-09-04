@@ -738,6 +738,8 @@ namespace
    class D3D12PipelineConfig : public GenericPipelineConfig
    {
    public:
+      D3D12PipelineConfig() {};
+
       D3D12PipelineConfig(string name, const std::vector<KeyValuePair>& macros, const std::vector<string>& cbv,
          const std::vector<string>& vsTex, const std::vector<string>& psTex, int32_t rtNum, TopologyType topology, ComPtr<ID3D12PipelineState>& pso, ComPtr<ID3D12RootSignature>& sign) :
          GenericPipelineConfig(name, macros, cbv, vsTex, psTex, rtNum, topology),

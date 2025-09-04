@@ -41,8 +41,6 @@ namespace Pillow::Graphics
 
    class GenericPipelineConfig
    {
-      DeleteDefautedMethods(GenericPipelineConfig)
-
    public:
       enum struct TopologyType : uint8_t
       {
@@ -58,6 +56,8 @@ namespace Pillow::Graphics
       std::vector<string> ConstantBuffers;
       int32_t RenderTargetCount;
       TopologyType Topology;
+
+      ForceInline GenericPipelineConfig() : ConfigName("NullConfig") {};
 
       // Example
       // ConfigName: SimpleShader@CheckOn@Quality=2
