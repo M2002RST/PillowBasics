@@ -756,8 +756,6 @@ namespace
    class PipelineStateManager
    {
    public:
-
-
       PipelineStateManager()
       {
 
@@ -786,6 +784,7 @@ namespace
          CreateSignAndPSO(pso, sign);
 
          D3D12PipelineConfig config;
+         //
       }
 
       void Delete()
@@ -820,6 +819,8 @@ namespace
          "vs_5_0",
          "ps_5_0"
       };
+
+      std::vector<D3D12PipelineConfig> configs;
 
       static void CompileShader(ComPtr<ID3DBlob>& byteCode, string filePath, ShaderType shaderType, const std::vector<KeyValuePair>& _macros)
       {
