@@ -695,12 +695,12 @@ namespace
 
    class HLSLInclude : public ID3DInclude
    {
-      ReadonlyProperty(std::filesystem::path, ParentDir)
+      ReadonlyProperty(std::filesystem::path, LocalPath)
 
    public:
       HLSLInclude(std::filesystem::path location)
       {
-         _ParentDir = location.parent_path();
+         _LocalPath = location.parent_path();
       }
 
       HRESULT Open(D3D_INCLUDE_TYPE IncludeType, LPCSTR pFileName, LPCVOID pParentData, LPCVOID* ppData, UINT* pBytes)
