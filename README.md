@@ -12,6 +12,6 @@ Aligned with the standard notation in C#. Classes, methods, and properties must 
 Folders and files MUST obey UpperCamelCase.
 
 ## Licenses
-- Pillow Basics itself is under the BSD 2-Clause "Simplified" license.<br/>
-- Under ***/SourceCode/3rdParty***, each subdirectory comprises a third-party library, related licenses, and optional pre-compiled binary files.<br/>
-- ***/SourceCode/3rdParty/EmbeddedCodeLicenses*** contains licenses for code references. They are supplied for the referred external code in Pillow Basics.<br/>
+1. Pillow Basics is under the BSD 2-Clause "Simplified" license.<br/>
+2. Inside the directory ***"/SourceCode/3rdParty"***, each subdirectory comprises a 3rd-party library, with license documents and possible pre-compiled binary files.<br/>
+3. The directory ***"/SourceCode/3rdParty/EmbeddedCodeLicenses"*** contains license documents for external code embedded in internal translation units. To clarify the actual usage, complementary comments are provided in those documents.<br/>
