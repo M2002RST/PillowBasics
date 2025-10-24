@@ -14,4 +14,4 @@ Folders and files MUST obey UpperCamelCase.
 ## Licenses
 - Pillow Basics itself is under the BSD 2-Clause "Simplified" license.<br/>
 - Under ***/SourceCode/3rdParty***, each subdirectory comprises a third-party library, related licenses, and optional pre-compiled binary files.<br/>
-- ***/SourceCode/3rdParty/EmbeddedCodeLicenses*** contains licenses for code references. They are supplied for the code referred within the code files of Pillow Basics.<br/>
+- ***/SourceCode/3rdParty/EmbeddedCodeLicenses*** contains licenses for code references. They are supplied for the referred external code in Pillow Basics.<br/>
